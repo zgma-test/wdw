@@ -1,0 +1,77 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "15cd97bf-59bd-47bc-b144-72d88d887929": {
+        "id": "15cd97bf-59bd-47bc-b144-72d88d887929",
+        "parent": null,
+        "name": "wdw",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "2f7d19a2-495b-4001-92b8-3dc58e8c1293"
+        ],
+        "isRemovable": false,
+        "filePath": "wdw"
+      },
+      "2f7d19a2-495b-4001-92b8-3dc58e8c1293": {
+        "id": "2f7d19a2-495b-4001-92b8-3dc58e8c1293",
+        "parent": "15cd97bf-59bd-47bc-b144-72d88d887929",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "wdw/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "15cd97bf-59bd-47bc-b144-72d88d887929",
+    "openFiles": [
+      "2f7d19a2-495b-4001-92b8-3dc58e8c1293"
+    ],
+    "currentFileId": "2f7d19a2-495b-4001-92b8-3dc58e8c1293",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "wdw",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1565162224204
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "wdw",
+      "url": "https://github.com/zgma-test/wdw"
+    }
+  }
+}
