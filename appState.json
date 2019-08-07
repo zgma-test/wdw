@@ -9,7 +9,6 @@
         "isDirectory": true,
         "children": [
           "4813ede2-e25b-4323-bb46-e0c9152bf959",
-          "47f51a10-04d2-4bab-a1f8-f677a5eb692f",
           "58e6648d-8dcb-4a48-a827-0cf0ef0db02e"
         ],
         "isRemovable": false,
@@ -34,8 +33,8 @@
         },
         "triggers": []
       },
-      "47f51a10-04d2-4bab-a1f8-f677a5eb692f": {
-        "id": "47f51a10-04d2-4bab-a1f8-f677a5eb692f",
+      "58e6648d-8dcb-4a48-a827-0cf0ef0db02e": {
+        "id": "58e6648d-8dcb-4a48-a827-0cf0ef0db02e",
         "parent": "15cd97bf-59bd-47bc-b144-72d88d887929",
         "name": "util.js",
         "type": "JS_FILE",
@@ -44,24 +43,15 @@
         "isRemovable": true,
         "filePath": "wdw/util.js",
         "code": ""
-      },
-      "58e6648d-8dcb-4a48-a827-0cf0ef0db02e": {
-        "id": "58e6648d-8dcb-4a48-a827-0cf0ef0db02e",
-        "parent": "15cd97bf-59bd-47bc-b144-72d88d887929",
-        "name": "util2.js",
-        "type": "JS_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "wdw/util2.js",
-        "code": ""
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "wdw/util.js",
+      "wdw/util2.js"
+    ],
     "rootNode": "15cd97bf-59bd-47bc-b144-72d88d887929",
     "openFiles": [
       "4813ede2-e25b-4323-bb46-e0c9152bf959",
-      "47f51a10-04d2-4bab-a1f8-f677a5eb692f",
       "58e6648d-8dcb-4a48-a827-0cf0ef0db02e"
     ],
     "currentFileId": "58e6648d-8dcb-4a48-a827-0cf0ef0db02e",
@@ -91,7 +81,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1565162374412
+    "lastSave": 1565162419157
   },
   "VCS_STATE": {
     "provider": "GitHub",
