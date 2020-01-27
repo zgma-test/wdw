@@ -1,31 +1,31 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "15cd97bf-59bd-47bc-b144-72d88d887929": {
-        "id": "15cd97bf-59bd-47bc-b144-72d88d887929",
+      "df21cc09-6775-44ad-ac3b-c324fbdf04d0": {
+        "id": "df21cc09-6775-44ad-ac3b-c324fbdf04d0",
         "parent": null,
         "name": "wdw",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "4813ede2-e25b-4323-bb46-e0c9152bf959",
-          "9fcfd16c-9418-4200-bfe5-1fadf0a4a2a5"
+          "26b6dc4a-3866-4faa-ba1d-7910bfa19470",
+          "3f84e179-ed96-49b9-95de-4f286e890952",
+          "e6dd1756-0913-4b44-93fe-44ff3fd09bc2"
         ],
         "isRemovable": false,
         "filePath": "wdw"
       },
-      "4813ede2-e25b-4323-bb46-e0c9152bf959": {
-        "id": "4813ede2-e25b-4323-bb46-e0c9152bf959",
-        "parent": "15cd97bf-59bd-47bc-b144-72d88d887929",
-        "name": "lambda2.js",
+      "26b6dc4a-3866-4faa-ba1d-7910bfa19470": {
+        "id": "26b6dc4a-3866-4faa-ba1d-7910bfa19470",
+        "parent": "df21cc09-6775-44ad-ac3b-c324fbdf04d0",
+        "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "wdw/lambda2.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "filePath": "wdw/lambda.js",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -33,29 +33,83 @@
         },
         "triggers": []
       },
-      "9fcfd16c-9418-4200-bfe5-1fadf0a4a2a5": {
-        "id": "9fcfd16c-9418-4200-bfe5-1fadf0a4a2a5",
-        "parent": "15cd97bf-59bd-47bc-b144-72d88d887929",
-        "name": "util.js",
-        "type": "JS_FILE",
+      "3f84e179-ed96-49b9-95de-4f286e890952": {
+        "id": "3f84e179-ed96-49b9-95de-4f286e890952",
+        "parent": "df21cc09-6775-44ad-ac3b-c324fbdf04d0",
+        "name": "jj.py",
+        "type": "PYTHON_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "wdw/util.js",
-        "code": ""
+        "filePath": "wdw/jj.py"
+      },
+      "e6dd1756-0913-4b44-93fe-44ff3fd09bc2": {
+        "id": "e6dd1756-0913-4b44-93fe-44ff3fd09bc2",
+        "parent": "df21cc09-6775-44ad-ac3b-c324fbdf04d0",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "wdw/__init__.py"
       }
     },
-    "deletedFiles": [],
-    "rootNode": "15cd97bf-59bd-47bc-b144-72d88d887929",
+    "rootNode": "df21cc09-6775-44ad-ac3b-c324fbdf04d0",
     "openFiles": [
-      "4813ede2-e25b-4323-bb46-e0c9152bf959",
-      "9fcfd16c-9418-4200-bfe5-1fadf0a4a2a5"
+      "26b6dc4a-3866-4faa-ba1d-7910bfa19470",
+      "3f84e179-ed96-49b9-95de-4f286e890952"
     ],
-    "currentFileId": "9fcfd16c-9418-4200-bfe5-1fadf0a4a2a5",
-    "resources": {},
+    "currentFileId": "26b6dc4a-3866-4faa-ba1d-7910bfa19470",
+    "resources": {
+      "s3as2TestLahiru": {
+        "name": "s3as2TestLahiru",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "as2-test-lahiru"
+          }
+        }
+      },
+      "s3awsAmplifyHotspaces": {
+        "name": "s3awsAmplifyHotspaces",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "aws-amplify-hotspaces"
+          }
+        }
+      },
+      "s3btbucketimages": {
+        "name": "s3btbucketimages",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "btbucket.images"
+          }
+        }
+      },
+      "snsusEast1TestSNS": {
+        "name": "snsusEast1TestSNS",
+        "type": "SNS",
+        "config": {
+          "topicMode": 1,
+          "topicName": "TestSNS",
+          "topicArn": "arn:aws:sns:us-east-1:318300609668:TestSNS",
+          "topicRegion": "us-east-1",
+          "snsType": 0,
+          "subscriptions": []
+        }
+      }
+    },
     "customTemplate": {
       "dialect": null,
-      "definitions": {}
+      "definitions": null
     },
     "envVariables": [
       {
@@ -68,7 +122,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "javascript",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -78,7 +140,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1565162523661
+    "lastSave": 1580128368417
   },
   "VCS_STATE": {
     "provider": "GitHub",
